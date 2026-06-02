@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wi-Fi Scanner Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Wi-Fi Analyzer</h1>
+            <p>Cek jaringan di sekitarmu</p>
+        </div>
+
+        <!-- Tombol Scan -->
+        <button id="scanBtn" class="scan-btn" onclick="startScan()">Pindai Jaringan</button>
+
+        <!-- Indikator loading -->
+        <div id="loader" class="loader hide"></div>
+        <p id="statusText" class="status-text">Tekan tombol untuk memulai</p>
+
+        <!-- Daftar Wi-fi -->
+        <ul id="wifiList" class="wifi-list">
+            <!-- Items akan dimasukan lewat JS -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
